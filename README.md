@@ -11,11 +11,11 @@ Css 3 动画样式。
 
 [官方教程](https://github.com/daneden/animate.css)
 
-引入样式文件，绑定对应的 className。
+单独打包引用或通过 seajs.use 引入样式文件，然后绑定对应的 className。
 
 ```js
 seajs.use(['$', 'alice/animate/1.0.0/animate.css'], function($) {
-    $('#test').addClass('animated bounceOutLeft');
+    $('#test').addClass('animated bounceOutLeft');  // bounceOutLeft 可替换成你想要的效果
 });
 ```
 
@@ -31,5 +31,5 @@ seajs.use(['$', 'alice/animate/1.0.0/animate.css'], function($) {
 
 ## API
 
-[所有 className](http://daneden.me/animate/)
+[所有 className 在此](http://daneden.me/animate/)
 
