@@ -17,6 +17,6 @@
     },
     "tests": ["animate"],
     "output": {
-        "animate.js": "."
+        "animate.css": "."
     }
 }
