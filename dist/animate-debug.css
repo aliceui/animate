@@ -1,6 +1,4 @@
-
-/** alice/animate/1.0.0/animate.css **/
-@charset "UTF-8";
+/*! define alice/animate/1.0.0/animate-debug.css */
 /*
 Animate.css - http://daneden.me/animate
 Licensed under the ☺ license (http://licence.visualidiot.com/)
@@ -3263,4 +3261,3 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     -o-animation-duration: 0.75s;
     animation-duration: 0.75s;
 }
-

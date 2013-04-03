@@ -1,9 +1,9 @@
 {
     "name": "animate",
     "version": "1.0.0",
-    "root": "alice",
+    "family": "alice",
     "description": "酷炫的 CSS3 动画。",
-    "homepage": "",
+    "homepage": "http://aliceui.org/animate",
     "author": "",
     "repository": {
         "type": "git",
@@ -13,10 +13,9 @@
         "url": "https://github.com/aliceui/animate/issues"
     },
     "license": "MIT",
-    "dependencies": {
-    },
-    "tests": ["animate"],
-    "output": {
-        "animate.css": "."
+    "spm": {
+        "alias": {
+        },
+        "output": ["animate.css"]
     }
 }
