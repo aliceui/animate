@@ -2,7 +2,7 @@
 
 ---
 
-Css 3 动画样式。
+Css 3 动画样式。代码来自：https://github.com/daneden/animate.css
 
 ---
 
@@ -41,45 +41,69 @@ seajs.use(['$', 'alice/animate/1.0.0/animate.css'], function($) {
 
 <style>
 .animate-obj {
-    width: 80px;
-    height: 80px;
-    background-color: #42B8F7;
+    display: inline-block;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #112233;
+    border-radius: 6px;
+    opacity: 0.9;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
 }
 </style>
 
-<div id="test1" class="animate-obj"></div>
-<button id="trigger1">点击触发动画</button>
+<div id="test1" class="animate-obj">bounceIn</div>
+<button id="trigger1">点击触发动画 bounceIn</button>
 
 ````js
 seajs.use(['$', './src/animate.css'], function($) {
     $('#trigger1').click(function() {
-        $('#test1').addClass('animated bounceOutLeft');
+        $('#test1').addClass('animated bounceIn');
     });
 });
 ````
 
-<div id="test2" class="animate-obj"></div>
-<button id="trigger2">点击触发动画</button>
+<div id="test2" class="animate-obj">fadeInUp</div>
+<button id="trigger2">点击触发动画 fadeOutRightBig</button>
 
 ````js
-seajs.use(['$', './src/animate.css'], function($) {
-    $('#trigger2').toggle(function() {
-        $('#test2').addClass('animated');
-        $('#test2').removeClass('fadeOutRightBig').addClass('fadeInRightBig')
-    }, function() {
-        $('#test2').removeClass('fadeInRightBig').addClass('fadeOutRightBig');
+seajs.use(['$', 'animate.css'], function($) {
+    $('#trigger2').click(function() {
+        $('#test2').addClass('animated fadeInUp');
     });
 });
 ````
 
-<div id="test3" class="animate-obj"></div>
-<button id="trigger3">点击触发动画</button>
+<div id="test3" class="animate-obj">rotateInUpRight</div>
+<button id="trigger3">点击触发动画 rotateInUpRight</button>
 
 ````js
-seajs.use(['$', './src/animate.css'], function($) {
+seajs.use(['$', 'animate.css'], function($) {
     $('#trigger3').click(function() {
         $('#test3').addClass('animated rotateInUpRight');
     });
 });
 ````
 
+<div id="test4" class="animate-obj">tada</div>
+<button id="trigger4">点击触发动画 tada</button>
+
+````js
+seajs.use(['$', 'animate.css'], function($) {
+    $('#trigger4').click(function() {
+        $('#test4').addClass('animated tada');
+    });
+});
+````
+
+<div id="test5" class="animate-obj">shake</div>
+<button id="trigger5">点击触发动画 shake</button>
+
+````js
+seajs.use(['$', 'animate.css'], function($) {
+    $('#trigger5').click(function() {
+        $('#test5').addClass('animated shake');
+    });
+});
+````
