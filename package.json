@@ -1,7 +1,6 @@
 {
-    "name": "animate",
-    "version": "2.1.0",
-    "family": "alice",
+    "name": "alice-animate",
+    "version": "2.2.0",
     "description": "酷炫的 CSS3 动画。",
     "homepage": "http://aliceui.org/animate",
     "author": "",
@@ -14,8 +13,6 @@
     },
     "license": "MIT",
     "spm": {
-        "alias": {
-        },
-        "output": ["animate.css"]
+        "main": "index.css"
     }
 }
