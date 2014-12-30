@@ -13,6 +13,9 @@
     },
     "license": "MIT",
     "spm": {
-        "main": "index.css"
+        "main": "index.css",
+        "devDependencies": {
+            "jquery": "1.*"
+        }
     }
 }

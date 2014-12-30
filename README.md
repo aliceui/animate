@@ -14,7 +14,7 @@ Css 3 动画样式。代码来自：https://github.com/daneden/animate.css
 通过 link 打包引用或使用 seajs.use 引入样式文件，然后绑定对应的 className。
 
 ```js
-seajs.use(['$', 'alice/animate/1.0.0/animate.css'], function($) {
+seajs.use(['jquery', 'alice/animate/1.0.0/animate.css'], function($) {
     $('#test').addClass('animated bounceOutLeft');  // bounceOutLeft 可替换成你想要的效果
 });
 ```
@@ -57,7 +57,7 @@ seajs.use(['$', 'alice/animate/1.0.0/animate.css'], function($) {
 <button id="trigger1">点击触发动画 bounceIn</button>
 
 ````js
-seajs.use(['$', './src/animate.css'], function($) {
+seajs.use(['jquery', 'index.css'], function($) {
     $('#trigger1').click(function() {
         $('#test1').addClass('animated bounceIn');
     });
@@ -68,7 +68,7 @@ seajs.use(['$', './src/animate.css'], function($) {
 <button id="trigger2">点击触发动画 fadeOutRightBig</button>
 
 ````js
-seajs.use(['$', 'animate.css'], function($) {
+seajs.use(['jquery', 'index.css'], function($) {
     $('#trigger2').click(function() {
         $('#test2').addClass('animated fadeInUp');
     });
@@ -79,7 +79,7 @@ seajs.use(['$', 'animate.css'], function($) {
 <button id="trigger3">点击触发动画 rotateInUpRight</button>
 
 ````js
-seajs.use(['$', 'animate.css'], function($) {
+seajs.use(['jquery', 'index.css'], function($) {
     $('#trigger3').click(function() {
         $('#test3').addClass('animated rotateInUpRight');
     });
@@ -90,7 +90,7 @@ seajs.use(['$', 'animate.css'], function($) {
 <button id="trigger4">点击触发动画 tada</button>
 
 ````js
-seajs.use(['$', 'animate.css'], function($) {
+seajs.use(['jquery', 'index.css'], function($) {
     $('#trigger4').click(function() {
         $('#test4').addClass('animated tada');
     });
@@ -101,7 +101,7 @@ seajs.use(['$', 'animate.css'], function($) {
 <button id="trigger5">点击触发动画 shake</button>
 
 ````js
-seajs.use(['$', 'animate.css'], function($) {
+seajs.use(['jquery', 'index.css'], function($) {
     $('#trigger5').click(function() {
         $('#test5').addClass('animated shake');
     });
